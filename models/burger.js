@@ -1,6 +1,3 @@
-// Here is the O.R.M. where you write functions that takes inputs and conditions
-// and turns them into database commands like SQL.
-
 var connection = require("./connection.js")
 
 function printQuestionMarks(num) {
@@ -24,7 +21,7 @@ function objToSql(ob) {
   return arr.toString()
 }
 
-// orm.all(milkshakes, () => {})
+// orm.all(burger, () => {})
 
 var orm = {
   all: function(tableInput, cb) {
